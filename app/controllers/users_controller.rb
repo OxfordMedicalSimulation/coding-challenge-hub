@@ -10,7 +10,7 @@ class UsersController < ApplicationController
     render json: user
   end
 
-  # OPTIMIZE: Possible N+1 issue, check Bullet logs
+  # OPTIMIZE: Possible N+1 issue, check Bullet logs (log/bullet.log)
   def feedback
     user = User.find(params[:id])
     render json: UserFeedbackPresenter.collection(user.feedbacks)
