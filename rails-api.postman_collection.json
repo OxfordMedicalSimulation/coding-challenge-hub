@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "722098be-2cb8-4988-b088-95e0e416f8ee",
+		"name": "rails-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36419830"
+	},
+	"item": [
+		{
+			"name": "Get Scenarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{RAILS_URL}}/scenarios",
+					"host": [
+						"{{RAILS_URL}}"
+					],
+					"path": [
+						"scenarios"
+					]
+				},
+				"description": "Get all scenarios"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Scenario",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{RAILS_URL}}/scenarios/1",
+					"host": [
+						"{{RAILS_URL}}"
+					],
+					"path": [
+						"scenarios",
+						"1"
+					]
+				},
+				"description": "Get a single scenario"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Users",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{RAILS_URL}}/users",
+					"host": [
+						"{{RAILS_URL}}"
+					],
+					"path": [
+						"users"
+					]
+				},
+				"description": "Get all users"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{RAILS_URL}}/users/1",
+					"host": [
+						"{{RAILS_URL}}"
+					],
+					"path": [
+						"users",
+						"1"
+					]
+				},
+				"description": "Get a user"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Feedback",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{RAILS_URL}}/users/1/feedback",
+					"host": [
+						"{{RAILS_URL}}"
+					],
+					"path": [
+						"users",
+						"1",
+						"feedback"
+					]
+				},
+				"description": "Get a users feedback"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Play Session",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{RAILS_URL}}/users/1/feedback",
+					"host": [
+						"{{RAILS_URL}}"
+					],
+					"path": [
+						"users",
+						"1",
+						"feedback"
+					]
+				},
+				"description": "Get users feedback"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "RAILS_URL",
+			"value": "",
+			"type": "default"
+		}
+	]
+}
